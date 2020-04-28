@@ -1,0 +1,286 @@
+/*--------------------------------------------------
+  Reset
+--------------------------------------------------*/
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+@media print {
+
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+}
+
+/*--------------------------------------------------
+  HTML
+--------------------------------------------------*/
+
+html {
+  min-width: 320px;
+  color: #212121;
+  font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: var(--font-family-sans-serif, "Noto Sans");
+  font-size: 62.5%;
+  line-height: 1.6;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*--------------------------------------------------
+  Outline
+--------------------------------------------------*/
+
+*:focus { outline: 1px dotted #2196F3; }
+
+body:not(.tab-used) *:focus { outline: none; }
+
+/*--------------------------------------------------
+  Body
+--------------------------------------------------*/
+
+body {
+  min-width: inherit;
+  color: inherit;
+  font-size: 1.6rem;
+  font-family: inherit;
+}
+
+body ::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  background-color: #E0E0E0;
+}
+
+body ::-webkit-scrollbar-thumb {
+  background-color: #BDBDBD;
+}
+
+@media (min-width: 768px) { body { font-size: 1.5rem; } }
+
+@media print { body { font-family: inherit; width: 100%; } }
+
+/*--------------------------------------------------
+  Links
+--------------------------------------------------*/
+
+a {
+  color: #2196F3;
+  text-decoration: none;
+}
+
+a:hover, a:visited, a:active, a:focus {
+  color: #2962FF;
+  text-decoration: underline;
+}
+
+@media print { a, a:visited { text-decoration: underline;  } }
+
+/*--------------------------------------------------
+  Typography
+--------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+
+em { font-style: italic; }
+
+strong { font-weight: bolder; }
+
+small { font-size: 75%; }
+
+pre {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: var(--font-family-monospace, monospace);
+  font-size: 1.4rem;
+}
+
+@media print {
+
+  p, h2, h3 { orphans: 3;  widows: 3; }
+  h2, h3 {  page-break-after: avoid;  }
+
+}
+
+/*--------------------------------------------------
+  Main
+--------------------------------------------------*/
+
+main { display: block; }
+
+/*--------------------------------------------------
+  Table
+--------------------------------------------------*/
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media print { thead { display: table-header-group; } }
+
+/*--------------------------------------------------
+  Add the correct text decoration
+  in Chrome, Edge, IE, Opera, and Safari.
+--------------------------------------------------*/
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/*--------------------------------------------------
+  Correct the inheritance and scaling of font size
+  in all browsers.
+  Correct the odd `em` font sizing in all browsers.
+--------------------------------------------------*/
+
+code, kbd, samp {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: var(--font-family-monospace, monospace);
+  font-size: 1em;
+}
+
+/*--------------------------------------------------
+  Prevent `sub` and `sup` elements from
+  affecting the line height in all browsers.
+--------------------------------------------------*/
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub { bottom: -0.25em; }
+
+sup { top: -0.5em; }
+
+/*--------------------------------------------------
+  Remove the border on images inside links in IE 10-.
+--------------------------------------------------*/
+
+img { border-style: none; }
+
+@media print { img {  page-break-inside: avoid; } }
+
+/*--------------------------------------------------
+  Show the overflow in IE.
+  Show the overflow in Edge.
+--------------------------------------------------*/
+
+button, input { overflow: visible; }
+
+/*--------------------------------------------------
+  Remove the inheritance of text transform in
+  Edge, Firefox, and IE.
+  Remove the inheritance of text transform in Firefox.
+--------------------------------------------------*/
+
+button, select { text-transform: none; }
+
+/*--------------------------------------------------
+  Remove the inner border and padding in Firefox.
+--------------------------------------------------*/
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/*--------------------------------------------------
+  Restore the focus styles unset by the previous rule.
+--------------------------------------------------*/
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/*--------------------------------------------------
+  Correct the padding in Firefox.
+--------------------------------------------------*/
+
+fieldset { padding: 0.35em 0.75em 0.625em; }
+
+/*--------------------------------------------------
+  Remove the default vertical scrollbar in IE.
+--------------------------------------------------*/
+
+textarea { overflow: auto; }
+
+/*--------------------------------------------------
+  Correct the cursor style of increment and
+  decrement buttons in Chrome.
+--------------------------------------------------*/
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*--------------------------------------------------
+  Correct the odd appearance in Chrome and Safari.
+  Correct the outline style in Safari.
+--------------------------------------------------*/
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+/*--------------------------------------------------
+  Remove the inner padding and cancel buttons
+  in Chrome and Safari on macOS.
+--------------------------------------------------*/
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*--------------------------------------------------
+  Correct the inability to style clickable types
+  in iOS and Safari.
+  Change font properties to `inherit` in Safari.
+--------------------------------------------------*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+/*--------------------------------------------------
+  Add the correct display in IE 10-.
+--------------------------------------------------*/
+
+[hidden] { display: none; }
+

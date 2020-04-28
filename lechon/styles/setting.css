@@ -1,0 +1,150 @@
+/*--------------------------------------------------------------
+ font-face - Noto Sans
+--------------------------------------------------------------*/
+
+/* @font-face {
+  font-family: 'Noto Sans';
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans'),
+       local('NotoSans'),
+       url(../assets/fonts/noto-sans/Noto-Sans.woff2) format('woff2'),
+       url(../assets/fonts/noto-sans/Noto-Sans.woff) format('woff'),
+       url(../assets/fonts/noto-sans/Noto-Sans.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-display: auto;
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Sans Bold'),
+       local('NotoSans-Bold'),
+       url(../assets/fonts/noto-sans/Noto-Sans-Bold.woff2) format('woff2'),
+       url(../assets/fonts/noto-sans/Noto-Sans-Bold.woff) format('woff'),
+       url(../assets/fonts/noto-sans/Noto-Sans-Bold.ttf) format('truetype');
+} */
+
+/*--------------------------------------------------------------
+ font-face - Noto Sans JP
+--------------------------------------------------------------*/
+
+/* @font-face {
+  font-family: 'Noto Sans JP';
+  font-display: auto;
+  font-style: normal;
+  font-weight: 300;
+  src: local('Noto Sans Japanese Light'),
+       local('NotoSansJapanese-Light'),
+       url(../assets/fonts/noto-sans_jp/Noto-Sans-Japanese-Light.woff2) format('woff2'),
+       url(../assets/fonts/noto-sans_jp/Noto-Sans-Japanese-Light.woff) format('woff'),
+       url(../assets/fonts/noto-sans_jp/Noto-Sans-Japanese-Light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans Japanese Regular'),
+       local('NotoSansJapanese-Regular'),
+       url(../assets/fonts/noto-sans_jp/Noto-Sans-Japanese-Regular.woff2) format('woff2'),
+       url(../assets/fonts/noto-sans_jp/Noto-Sans-Japanese-Regular.woff) format('woff'),
+       url(../assets/fonts/noto-sans_jp/Noto-Sans-Japanese-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-display: auto;
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Sans Japanese Bold'),
+       local('NotoSansJapanese-Bold'),
+       url(../assets/fonts/noto-sans_jp/Noto-Sans-Japanese-Bold.woff2) format('woff2'),
+       url(../assets/fonts/noto-sans_jp/Noto-Sans-Japanese-Bold.woff) format('woff'),
+       url(../assets/fonts/noto-sans_jp/Noto-Sans-Japanese-Bold.ttf) format('truetype');
+} */
+
+/*--------------------------------------------------------------
+ font-face - Open Sans Condensed
+--------------------------------------------------------------*/
+
+/* @font-face {
+  font-family: 'Open Sans Condensed';
+  font-display: auto;
+  font-style: normal;
+  font-weight: 300;
+  src: local("Open Sans Condensed Light"),
+       local("OpenSansCondensed-Light"),
+       url(../assets/fonts/open-sans_condensed/Open-Sans-Condensed-Light.woff2) format("woff2"),
+       url(../assets/fonts/open-sans_condensed/Open-Sans-Condensed-Light.woff) format("woff"),
+       url(../assets/fonts/open-sans_condensed/Open-Sans-Condensed-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-display: auto;
+  font-style: normal;
+  font-weight: 700;
+  src: local("Open Sans Condensed Bold"),
+       local("OpenSansCondensed-Bold"),
+       url(../assets/fonts/open-sans_condensed/Open-Sans-Condensed-Bold.ttf) format("woff2"),
+       url(../assets/fonts/open-sans_condensed/Open-Sans-Condensed-Bold.woff) format("woff"),
+       url(../assets/fonts/open-sans_condensed/Open-Sans-Condensed-Bold.ttf) format("truetype");
+} */
+
+/*--------------------------------------------------------------
+ Custom Properties (CSS Varialbles)
+--------------------------------------------------------------*/
+
+:root {
+
+  /* Color */
+  --primary: #263238;
+  --secondary: #ECECEC;
+  --success: #4CAF50;
+  --warning: #FF5722;
+  --danger: #B60000;
+  --info: rgb(0, 1, 2);
+  --light: #FAFAFA;
+  --dark: #212121;
+
+  --red: #F44336;
+  --pink: #E91E63;
+  --purple: #9C27B0;
+  --deep-purple: #673AB7;
+  --indigo: #3F51B5;
+  --blue: #0F94B4;
+  --light-blue: #03A9F4;
+  --cyan: #00BCD4;
+  --teal: #009688;
+  --green: #4CAF50;
+  --light-green: #8BC34A;
+  --lime: #CDDC39;
+  --yellow: #FFEB3B;
+  --amber: #FFC107;
+  --orange: #FF9800;
+  --deep-orange: #FF5722;
+  --brown: #795548;
+  --blue-grey: #607D8B;
+
+  --grey-50: #FAFAFA;
+  --grey-100: #F5F5F5;
+  --grey-200: #EEEEEE;
+  --grey-300: #E0E0E0;
+  --grey-400: #BDBDBD;
+  --grey-500: #9E9E9E;
+  --grey-600: #757575;
+  --grey-700: #616161;
+  --grey-800: #424242;
+  --grey-900: #212121;
+
+  /* Transition */
+  --transition: all 300ms ease-in-out;
+
+  /* font-family */
+  --font-family-sans-serif: Arial, Roboto, "Droid Sans", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+}
