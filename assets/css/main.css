@@ -2635,7 +2635,7 @@ input, select, textarea {
 			@media screen and (min-width: 768px) {
 				.image.fit img {
 					height: 250px;
-					object-fit: cover;
+					object-fit: contain;
 				}
 			}
 
